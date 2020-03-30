@@ -10,3 +10,184 @@ body {
   margin: 0;
   min-height: 100%;
 }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  height: 64px;
+  width: 100%;
+  background-color: black;
+  z-index: 1;
+}
+
+h1 {
+  margin: 0.5rem;
+  color: #01d277;
+}
+
+h2 {
+  position: relative;
+}
+
+main {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.featured {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0rem;
+  background-image: radial-gradient(circle, #01d277, black, darkslategray);
+  height: auto;
+  border-color: gold;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.featured-header {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0px 0px 5px black;
+}
+
+.featured-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: white;
+  text-shadow: 0px 0px 5px black;
+}
+
+.featured-poster {
+  height: 300px;
+  width: 225px;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.featured-rating {
+  margin-top: 1rem;
+  color: white;
+  font-weight: 400;
+  text-shadow: 0px 0px 5px black;
+}
+
+.featured-overview {
+  border-color: darkslategray;
+  border-width: 2px;
+  border-style: solid;
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  width: 70vw;
+}
+
+.all-shows {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.show-card {
+  width: 400px;
+  height: 225px;
+  margin: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  border-style: solid;
+  border-width: 2px;
+  border-color: darkgrey;
+  box-shadow: 0px 0px 5px black;
+}
+
+.show-title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.show-overview {
+  font-size: 0.75rem;
+  color: black;
+}
+
+.show-summary {
+  padding-left: 1rem;
+  text-align: left;
+}
+
+.show-details-bg {
+  position: absolute;
+  width: 98.95vw;
+  top: 64px;
+  background-color: #01d277;
+}
+
+.show-details {
+  background-color: white;
+  margin-top: 5vh;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 5px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.summary-header {
+  padding-top: 1rem;
+}
+
+.summary-overview {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 70%;
+}
+
+.cast-list {
+  width: 35vw;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.actor-name {
+  margin-left: auto;
+  margin-right: auto;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.character-name {
+  margin-left: auto;
+  margin-right: auto;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+@media (max-width: 500px) {
+  .cast-list {
+    font-size: smaller;
+  }
+}
